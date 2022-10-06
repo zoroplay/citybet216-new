@@ -10,7 +10,7 @@
         </div>
       </VueSlickCarousel>
     </div>
-    <div class="container-fluid px-4 body-section" style="margin-top: -320px">
+    <div class="container-fluid px-4 body-section">
       <div class="row mb-3 d-none">
         <div class="col-md-4 col-lg-4">
           <nuxt-link to="/" class="tl_landing_banner">
@@ -108,7 +108,7 @@
         <div class="col-6 col-lg-2">
           <nuxt-link to="">
             <div class="card landing-card">
-              <div class="card-body d-flex align-items-center flex-column">
+              <div class="card-body px-2 d-flex align-items-center flex-column">
                 <img src="~/assets/img/Lucky-balls.png" />
                 <p class="mt-auto mb-0">LUCKY BALLS</p>
               </div>
@@ -119,7 +119,7 @@
 
       <Highlights />
       <div class="casino">
-        <div class="px-0 col-12 mb-3">
+        <div class="px-0  col-12 mb-3">
           <nuxt-link
             to="/"
             id=""
@@ -131,7 +131,7 @@
           >
         </div>
         <div class="row justify-content-center mb-3">
-          <div class="col-12 mb-3">
+          <div class="col-lg-4 col-12 mb-3">
             <nuxt-link to="/" class="tl_games_slider_game">
               <div class="card border-0 rounded-3">
                 <img
@@ -142,7 +142,7 @@
               </div>
             </nuxt-link>
           </div>
-          <div class="col-12 mb-3">
+          <div class="col-lg-4 col-12 mb-3">
             <nuxt-link to="/" class="tl_games_slider_game">
               <div class="card border-0 rounded-3">
                 <img
@@ -153,7 +153,7 @@
               </div>
             </nuxt-link>
           </div>
-          <div class="col-12 mb-3">
+          <div class="col-lg-4 col-12 mb-3">
             <nuxt-link to="/" class="tl_games_slider_game">
               <div class="card border-0 rounded-3">
                 <img
@@ -202,16 +202,44 @@ export default {
   background-image: linear-gradient(gray 100%, transparent 0);
 }
 
+.body-section{
+  margin-top: -320px
+}
+
+@media screen and (max-width: 320px) {
+  .img-wrapper img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    position: relative;
+    object-position: -120px 0px;
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 568px) {
   .img-wrapper img {
     width: 100%;
     height: 700px;
     object-fit: cover;
     position: relative;
-    object-position: top 50%;
+    object-position: -120px 0px;
     left: 0;
   }
 }
+
+@media screen and (max-width: 800px) {
+  .img-wrapper img {
+    margin: auto;
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(gray 100%, transparent 0);
+  }
+  .body-section{
+    margin-top: -225px
+  }
+}
+
 
 .bg-black {
   background: #000;
@@ -233,5 +261,7 @@ export default {
 .landing-card img {
   width: 50px;
 }
+
+
 
 </style>

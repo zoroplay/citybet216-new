@@ -17,7 +17,7 @@
               >BASKETBALL <span class="sport_name"></span
             ></a>
           </li>
-          <li class="nav-item disabled">
+          <li class="nav-item disabled mb-3">
             <a href="#" class="nav-link text-white p-2 rounded mr-1"
               >TENNIS <span class="sport_name"></span
             ></a>

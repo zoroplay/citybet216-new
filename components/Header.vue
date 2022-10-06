@@ -6,7 +6,7 @@
           <img src="~/assets/img/logo.png" style="height: 50px" alt="" />
         </a>
       </div>
-      <button
+      <!-- <button
         class="navbar-toggler d-lg-none"
         type="button"
         data-toggle="collapse"
@@ -16,35 +16,14 @@
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavId">
-        <ul class="navbar-nav mr-4 ml-auto mt-2 mt-lg-0">
-          <!-- <li class="nav-item active">
-            <a
-              class="tl_simple_link tl_simple_link-accent mr-2 d-flex align-items-center"
-              href="#"
-              >PROMOTIONS</a
-            >
-          </li> -->
-          <li class="nav-item">
-            <!-- <a class="nav-link text-white" href="#">Rules</a> -->
-          </li>
-          <li class="nav-item">
+      </button> -->
+      <ul class="navbar-nav mr-4 ml-auto mt-2 mt-lg-0">
+
+          <li class="nav-item d-none d-lg-block">
             <a class="nav-link text-white" style="font-size: 18px" href="#">Livescore</a>
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link text-white" href="#">Statistics</a> -->
           </li>
         </ul>
         <div class="tl_logged_out">
-          <!-- <a
-            name=""
-            id=""
-            class="btn btn-secondary mr-2"
-            href="#"
-            role="button"
-            >REGISTER</a
-          > -->
           <a
             name=""
             id=""
@@ -55,7 +34,6 @@
           >
 
         </div>
-      </div>
     </nav>
   </div>
 </template>
